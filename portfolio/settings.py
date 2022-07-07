@@ -126,7 +126,7 @@ STATICFILES_DIRS = [
 
 if 'USE_AWS' in os.environ:
     # BUCKET STUFF
-    AWS_STORAGE_BUSKET_NAME = 'dbrownportfolio'
+    AWS_STORAGE_BUCKET_NAME = 'dbrownportfolio'
     AWS_S3_REGION_NAME = 'eu-west-2'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
