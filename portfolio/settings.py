@@ -7,7 +7,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
-# SECRET_KEY = 'themostsecretkeyevermade'
 
 DEBUG = 'DEVELOPMENT' in os.environ
 
@@ -80,11 +79,6 @@ else:
 #         }
 #     }
 
-
-
-
-# Password validation
-# https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {

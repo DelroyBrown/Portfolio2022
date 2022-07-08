@@ -229,3 +229,7 @@ section.projects.container > div {
 section.projects.container > div > div:nth-child(1) {
     width: 100%;
 }
+
+.card-description {
+    font-size: 20px;
+}
