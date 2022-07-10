@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
 :root {
     --link-text-color: #76BA99;
     --bright-text-color: #FFFFFF;
@@ -100,6 +102,28 @@ nav>div:nth-child(3) {
         transform: translateY(-80px);
     }
 }
+
+/* FOOTER */
+
+.footer nav {
+    width: 100%;
+    height: 80px;
+    color: var(--dim-text-color);
+    font-weight: var(--font-weight-light);
+    padding: 0px 30px;
+    border-top: 4px solid var(--dim-text-color);
+}
+
+.footer ul {
+    justify-content: flex-end;
+}
+
+footer > div > div > nav > div:nth-child(1) > a {
+    font-family: 'Allura', cursive;
+    font-size: 20px;
+}
+
+
 
 /* FIRST SECTION */
 
@@ -317,5 +341,38 @@ section.projects.container>div>div:nth-child(1) {
 }
 
 .card-description {
-    font-size: 20px;
+    font-size: 15px;
+}
+
+body > section.projects.container.mt-200 > h3 {
+    padding-left: 30px;
+}
+
+/* CONTACTG FORM SECTION */
+
+section.contact-form-container.container.mt-200>div>form>div.grid-1>textarea {
+    margin: 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    font-size: 16px;
+    resize: none;
+    height: 150px;
+    color: #fff;
+    outline: none;
+    /* padding: 15px 0px; */
+}
+
+section.contact-form-container.container.mt-200>div>form>div.grid-1>textarea::placeholder {
+    color: var(--dim-text-color);
+    font-size: 17px;
+}
+
+form > div.grid-1 > input[type=button] {
+    height: 40px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
 }
