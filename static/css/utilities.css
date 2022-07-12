@@ -6,7 +6,6 @@
     max-width: 1250px;
     margin: 0 auto;
     overflow: auto;
-    /* padding: 0 40px; */
 }
 
 .div-border {
@@ -27,7 +26,7 @@
     from {
         width: 0%;
     }
-    
+
     to {
         width: 100%;
     }
@@ -331,3 +330,4 @@ input[type="number"]:focus {
 .p-5 {
     padding: 50px;
 }
+

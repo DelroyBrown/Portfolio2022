@@ -382,3 +382,73 @@ form>div.grid-1>input[type=button] {
     font-size: 16px;
     font-weight: 400;
 }
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 902px) {
+
+    .container {
+        padding: 0 40px;
+
+    }
+
+    body>div>div>nav>div:nth-child(1),
+    body>footer>div>div>nav>div:nth-child(1),
+    body>footer>div>div>nav>div:nth-child(3) {
+        display: none;
+    }
+
+
+    body>div>div>nav {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    nav>div:nth-child(3) {
+        margin-top: 10px;
+    }
+
+    .animation-wrapper {
+        width: 300px !important;
+        margin: auto;
+        padding: 20px 0px;
+    }
+
+    .sphere-animation {
+        width: 300px;
+        height: 300px;
+        /* margin-left: 65%; */
+    }
+
+    .main-header.container.text-center>div.mt-3>h1 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    body>section:nth-child(3)>div:nth-child(2),
+    body>section:nth-child(3)>div:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    body>section.projects.container.mt-200>div {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .contact-form-container.container.mt-200>div>form>div:nth-child(1),
+    .contact-form-container.container.mt-200>div>form>div:nth-child(2) {
+        grid-template-columns: 100%;
+    }
+
+    body>footer>div>div>nav {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+}
