@@ -17,7 +17,14 @@
 
 body {
     background-color: #21272C;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
+
+::-webkit-scrollbar {
+    display: none;
+  }
+  
 
 a {
     text-decoration: none;
@@ -350,13 +357,13 @@ section.projects.container>div>div:nth-child(1) {
     font-size: 15px;
 }
 
-body>section.projects.container.mt-200>h3 {
+body>section.projects.container>h3 {
     padding-left: 30px;
 }
 
 /* CONTACTG FORM SECTION */
 
-section.contact-form-container.container.mt-200>div>form>div.grid-1>textarea {
+section.contact-form-container.container>div>form>div.grid-1>textarea {
     margin: 15px;
     background-color: transparent;
     border: none;
@@ -369,7 +376,7 @@ section.contact-form-container.container.mt-200>div>form>div.grid-1>textarea {
     /* padding: 15px 0px; */
 }
 
-section.contact-form-container.container.mt-200>div>form>div.grid-1>textarea::placeholder {
+section.contact-form-container.container>div>form>div.grid-1>textarea::placeholder {
     color: var(--dim-text-color);
     font-size: 17px;
 }
@@ -433,14 +440,14 @@ form>div.grid-1>input[type=button] {
         flex-direction: column;
     }
 
-    body>section.projects.container.mt-200>div {
+    body>section.projects.container>div {
         display: flex;
         flex-direction: column;
 
     }
 
-    .contact-form-container.container.mt-200>div>form>div:nth-child(1),
-    .contact-form-container.container.mt-200>div>form>div:nth-child(2) {
+    .contact-form-container.container>div>form>div:nth-child(1),
+    .contact-form-container.container>div>form>div:nth-child(2) {
         grid-template-columns: 100%;
     }
 
