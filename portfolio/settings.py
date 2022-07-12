@@ -6,9 +6,11 @@ import dj_database_url
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-SECRET_KEY = os.environ.get('SECRET_KEY', '')
+# SECRET_KEY = os.environ.get('SECRET_KEY', '')
+SECRET_KEY = 'supersecretkey'
 
-DEBUG = 'DEVELOPMENT' in os.environ
+# DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = True
 
 ALLOWED_HOSTS = ['dbrownportfolio.herokuapp.com', 'localhost', '127.0.0.1']
 
@@ -60,24 +62,24 @@ TEMPLATES = [
 WSGI_APPLICATION = 'portfolio.wsgi.application'
 
 
-if 'DATABASE_URL' in os.environ:
-    DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-    }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
-    }
-
-# DATABASES = {
+# if 'DATABASE_URL' in os.environ:
+#     DATABASES = {
+#         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+#     }
+# else:
+#     DATABASES = {
 #         'default': {
 #             'ENGINE': 'django.db.backends.sqlite3',
 #             'NAME': BASE_DIR / 'db.sqlite3',
 #         }
 #     }
+
+DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -118,23 +120,23 @@ STATICFILES_DIRS = [
 ]
 
 
-if 'USE_AWS' in os.environ:
-    # BUCKET STUFF
-    AWS_STORAGE_BUCKET_NAME = 'dbrownportfolio'
-    AWS_S3_REGION_NAME = 'eu-west-2'
-    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
-    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+# if 'USE_AWS' in os.environ:
+#     # BUCKET STUFF
+#     AWS_STORAGE_BUCKET_NAME = 'dbrownportfolio'
+#     AWS_S3_REGION_NAME = 'eu-west-2'
+#     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+#     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+#     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
-    # STATIC & MEDIA FILES
-    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
-    STATICFILES_LOCATION = 'static/'
-    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
-    MEDIAFILES_LOCATION = 'media/'
+#     # STATIC & MEDIA FILES
+#     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+#     STATICFILES_LOCATION = 'static/'
+#     DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+#     MEDIAFILES_LOCATION = 'media/'
 
-    # OVERRIDE STATIC AND MEDIA URLs IN PRODUCTION
-    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
-    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+#     # OVERRIDE STATIC AND MEDIA URLs IN PRODUCTION
+#     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+#     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

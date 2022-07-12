@@ -17,14 +17,16 @@
 
 body {
     background-color: #21272C;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 ::-webkit-scrollbar {
     display: none;
-  }
-  
+}
+
 
 a {
     text-decoration: none;
@@ -114,6 +116,49 @@ nav>div:nth-child(3) {
     from {
         transform: translateY(-80px);
     }
+}
+
+/* CV MODAL */
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 5s;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: transparent;
+    transition: 5s;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    width: 50%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #76BA99;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* FOOTER */
@@ -434,8 +479,10 @@ form>div.grid-1>input[type=button] {
         line-height: 35px;
     }
 
-    body>section:nth-child(3)>div:nth-child(2),
-    body>section:nth-child(3)>div:nth-child(3) {
+
+
+    body>section:nth-child(4)>div:nth-child(2),
+    body>section:nth-child(4)>div:nth-child(3) {
         display: flex;
         flex-direction: column;
     }
@@ -456,6 +503,49 @@ form>div.grid-1>input[type=button] {
         flex-direction: column;
         justify-content: space-between;
     }
+
+    /* CV MODAL */
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        transition: 5s;
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+        background-color: transparent;
+        transition: 5s;
+        margin: 15% auto;
+        /* 15% from the top and centered */
+        padding: 20px;
+        width: 100%;
+        /* Could be more or less, depending on screen size */
+    }
+
+    /* The Close Button */
+    .close {
+        color: #76BA99;
+        float: right;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
 
 
 }

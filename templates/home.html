@@ -30,19 +30,33 @@
           <a href="#">Colour Changer</a>
         </div>
         <div class="text-center">
-          <a href="#">Curriculum Vitae (PDF)</a>
+          <a id="myBtn">Curriculum Vitae (PDF)</a>
         </div>
         <div>
           <ul class="flex">
             <li><a href="#"><i class="fa-solid fa-at"></i>Mail</a></li>
-            <li><a href="#"><i class="fa-brands fa-linkedin"></i>Linkedin</a></li>
-            <li><a href="#"><i class="fa-brands fa-instagram-square"></i>Instagram</a></li>
+            <li><a href="https://linkedin.com/in/delroy-brown-b83045226" target="_blank"><i
+                  class="fa-brands fa-linkedin"></i>Linkedin</a></li>
+            <li><a href="https://github.com/delroybrown" target="_blank"><i class="fa-brands fa-github"></i>github</a>
+            </li>
           </ul>
         </div>
       </nav>
     </div>
   </div>
 
+  <!-- MODAL -->
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="{% static 'images/DelroyBrown_CV.svg' %}" alt="Delroy Brown CV">
+    </div>
+
+  </div>
 
   <!-- FIRST SECTION -->
 
@@ -126,7 +140,7 @@
             <linearGradient id="sphereGradient">
               <stop stop-color="#2a3238" offset="0%" />
               <stop stop-color="#272e33" offset="50%" />
-              <stop stop-color="#21272c" offset="100%" />
+              <stop stop-color="#101316" offset="100%" />
             </linearGradient>
           </defs>
           <path d="M361.604 361.238c-24.407 24.408-51.119 37.27-59.662 28.727-8.542-8.543 4.319-35.255 28.726-59.663 24.408-24.407 51.12-37.269 
@@ -178,11 +192,12 @@
       </div>
     </div>
     <div class="mt-3">
-      <h1 class="header-blurb title-font light-text-color text-left lh-6 fw-3">Hi, I'm <span class="fw-2 accent-text-color italic">Delroy J. Brown</span>. Web Developer & Designer
+      <h1 class="header-blurb title-font light-text-color text-left lh-6 fw-3">Hi, I'm <span
+          class="fw-2 accent-text-color italic">Delroy J. Brown</span>. Web Developer & Designer
         based
         in
         Buckinghamshire, England.</h1>
-        <div class="div-border"></div>
+      <div class="div-border"></div>
 
     </div>
 
@@ -315,7 +330,7 @@
     </div>
   </section>
 
-    <!-- <div class="card-alt">
+  <!-- <div class="card-alt">
       </div> -->
 
   <!-- PROJECTS SECTION -->
@@ -336,21 +351,23 @@
           <a href="https://praybuddy.herokuapp.com/" target="_blank" class="project-card-btn card-btn small-font">View
             Live Project
           </a>
-            
+
         </div>
       </div>
 
-    
- 
+
+
       <div class="card-alt">
         <div href="https://thevinylproject.herokuapp.com/" target="_blank" class="light-text-color title-font fw-2">
           <img src="{% static 'images/vinylimage.png' %}" alt="">
 
           <h3 class="subtitle-font fw-3">The Vinyl Project</h3>
           <p class="card-description mt-1 mb-1 fw-3 dim-text-color">
-            An Ecommerce store specialising in mainly vinyl records but also CDs & Tapes. Using Stripe as a payment gateway. 
+            An Ecommerce store specialising in mainly vinyl records but also CDs & Tapes. Using Stripe as a payment
+            gateway.
           </p>
-          <a href="https://thevinylproject.herokuapp.com/" target="_blank" class="project-card-btn card-btn small-font">View
+          <a href="https://thevinylproject.herokuapp.com/" target="_blank"
+            class="project-card-btn card-btn small-font">View
             Live Project</a>
         </div>
       </div>
@@ -358,11 +375,11 @@
       <div class="card-alt">
         <h3 class="subtitle-font fw-3 light-text-color">MORE TO COME...</h3>
       </div>
- 
 
-  
+
+
     </div>
-   
+
 
   </section>
 
@@ -380,11 +397,11 @@
           <input class="contact-form__input-fields" type="number" placeholder="Contact Number">
           <input class="contact-form__input-fields" type="email" placeholder="Email" required>
         </div>
-       <div class="grid-1">
-        <!-- <input id="contact-form-textarea" type="text" placeholder="How can i help?" required> -->
-        <textarea placeholder="How can I help?" class="contact-form-textarea"></textarea>
-        <input type="button" value="Submit">
-       </div>
+        <div class="grid-1">
+          <!-- <input id="contact-form-textarea" type="text" placeholder="How can i help?" required> -->
+          <textarea placeholder="How can I help?" class="contact-form-textarea"></textarea>
+          <input type="button" value="Submit">
+        </div>
       </form>
     </div>
   </section>
@@ -399,13 +416,15 @@
             <a class="fw-5 light-text-color" href="#">Delroy J. Brown</a>
           </div>
           <div class="text-center">
-            <a href="#">Curriculum Vitae (PDF)</a>
+            <a id="myBtn2">Curriculum Vitae (PDF)</a>
           </div>
           <div>
             <ul class="flex">
               <li><a href="#"><i class="fa-solid fa-at"></i>Mail</a></li>
-              <li><a href="#"><i class="fa-brands fa-linkedin"></i>Linkedin</a></li>
-              <li><a href="#"><i class="fa-brands fa-instagram-square"></i>Instagram</a></li>
+              <li><a href="https://linkedin.com/in/delroy-brown-b83045226" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i>Linkedin</a></li>
+              <li><a href="https://github.com/delroybrown" target="_blank"><i class="fa-brands fa-github"></i>github</a>
+              </li>
             </ul>
           </div>
         </nav>
