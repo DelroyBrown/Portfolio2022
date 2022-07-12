@@ -39,19 +39,20 @@ a:hover {
 }
 
 .animation-wrapper {
-    width: 300px !important;
+    width: 500px !important;
+    margin: auto;
 }
 
 .sphere-animation {
-    width: 300px;
-    height: 300px;
-    margin-left: 150%;
+    width: 500px;
+    height: 500px;
+    /* margin-left: 65%; */
 }
 
 .sphere path {
     fill: url(#sphereGradient);
     stroke-width: 1px;
-    stroke: rgba(80, 80, 80, 0.35);
+    /* stroke: red; */
     backface-visibility: hidden;
 }
 
@@ -59,6 +60,11 @@ a:hover {
     .sphere path {
         stroke-width: .4px;
     }
+}
+
+body>section.main-header.container.text-center>div.mt-3 {
+    /* border-bottom: 5px solid var(--link-text-color); */
+    position: relative;
 }
 
 /* NAVBAR */
@@ -118,7 +124,7 @@ nav>div:nth-child(3) {
     justify-content: flex-end;
 }
 
-footer > div > div > nav > div:nth-child(1) > a {
+footer>div>div>nav>div:nth-child(1)>a {
     font-family: 'Allura', cursive;
     font-size: 20px;
 }
@@ -128,7 +134,7 @@ footer > div > div > nav > div:nth-child(1) > a {
 /* FIRST SECTION */
 
 .main-header {
-    height: 100%;
+    height: 100vh;
     padding-top: 100px;
 }
 
@@ -344,7 +350,7 @@ section.projects.container>div>div:nth-child(1) {
     font-size: 15px;
 }
 
-body > section.projects.container.mt-200 > h3 {
+body>section.projects.container.mt-200>h3 {
     padding-left: 30px;
 }
 
@@ -368,7 +374,7 @@ section.contact-form-container.container.mt-200>div>form>div.grid-1>textarea::pl
     font-size: 17px;
 }
 
-form > div.grid-1 > input[type=button] {
+form>div.grid-1>input[type=button] {
     height: 40px;
     background-color: #fff;
     border: none;

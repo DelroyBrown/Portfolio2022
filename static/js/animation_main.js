@@ -29,7 +29,7 @@ var sphereAnimation = (function() {
       for (var i = 0; i < pathLength; i++) {
         aimations.push(anime({
           targets: spherePathEls[i],
-          stroke: {value: ['#29404e', '#2a4858'], duration: 700},
+          stroke: {value: ['#76BA99', '#343d45'], duration: 700},
           translateX: [5, -4],
           translateY: [5, -4],
           easing: 'easeOutQuad',

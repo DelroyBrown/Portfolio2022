@@ -9,6 +9,32 @@
     /* padding: 0 40px; */
 }
 
+.div-border {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: -50px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: var(--link-text-color);
+    animation-delay: 1s;
+    animation: borderExtend 3s ease-in-out;
+}
+
+@keyframes borderExtend {
+    from {
+        width: 0%;
+    }
+    
+    to {
+        width: 100%;
+    }
+}
+
+/* INPUT FIELD STYLING */
+
 input {
     margin: 15px;
 }
@@ -40,6 +66,8 @@ input[type="number"]:focus {
     outline: none;
 }
 
+/* FONT COLORS */
+
 .dark-text-color {
     color: #000;
 }
@@ -51,6 +79,12 @@ input[type="number"]:focus {
 .dim-text-color {
     color: #FFFFFF8C;
 }
+
+.accent-text-color {
+    color: #76BA99;
+}
+
+/* CARD STYLES */
 
 .card {
     background-color: transparent;
@@ -67,27 +101,9 @@ input[type="number"]:focus {
     margin: 10px;
 }
 
-.fw-2 {
-    font-weight: 200;
-}
-
-.fw-3 {
-    font-weight: 300;
-}
-
-.fw-4 {
-    font-weight: 400;
-}
-
-.fw-5 {
-    font-weight: 500;
-}
 
 
-.sm-text {
-    font-size: 15px;
-}
-
+/* GRID & FLEX */
 .flex {
     display: flex;
     justify-content: center;
@@ -185,6 +201,30 @@ input[type="number"]:focus {
 .lh-6 {
     line-height: 60px;
 }
+
+
+.fw-2 {
+    font-weight: 200;
+}
+
+.fw-3 {
+    font-weight: 300;
+}
+
+.fw-4 {
+    font-weight: 400;
+}
+
+.fw-5 {
+    font-weight: 500;
+}
+
+
+.sm-text {
+    font-size: 15px;
+}
+
+
 
 /* MARGINS */
 
