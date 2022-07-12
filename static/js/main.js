@@ -4,6 +4,7 @@
 //     console.log(`Letter i${i} is ${svgText[i].getTotalLength()}`)
 // }
 
+// CV MODAL
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
 var btn2 = document.getElementById("myBtn2");
@@ -25,3 +26,15 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
+// DARKMODE/LIGHTMODE
+
+$(".inner-switch").on("click", function () {
+  if ($("body").hasClass("light-mode")) {
+    $("body").removeClass("light-mode");
+    $(".inner-switch").text("Turn the lights on?");
+  } else {
+    $("body").addClass("light-mode");
+    $(".inner-switch").text("Turn the lights off?");
+  }
+});

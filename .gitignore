@@ -84,7 +84,7 @@ coverage.xml
 *.cover 
 .hypothesis/ 
 
-
+settings copy.py
 # Jupyter Notebook 
 .ipynb_checkpoints 
 

@@ -8,9 +8,14 @@
     overflow: auto;
 }
 
-section, footer, .contact-form-container {
+section,
+footer,
+.contact-form-container {
     margin-top: 100px;
 }
+
+
+
 
 .div-border {
     position: absolute;
@@ -334,4 +339,3 @@ input[type="number"]:focus {
 .p-5 {
     padding: 50px;
 }
-

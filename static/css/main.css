@@ -5,8 +5,22 @@
     --bright-text-color: #FFFFFF;
     --dim-text-color: #FFFFFF8C;
     --font-weight-light: 300;
+    /* DARKMODE/LIGHTMODE */
+    --lightmode-background: #FFFFFF;
+}   
+/* DARKMODE/LIGHTMODE */
 
+.light-mode {
+    background-color: #fff;
+    filter: invert(100%) hue-rotate(180deg);
+    transition: 5s;
 }
+
+/* img {
+    filter: invert(1) hue-rotate(180deg)
+  } */
+
+
 
 * {
     box-sizing: border-box;
