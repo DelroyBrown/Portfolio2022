@@ -8,6 +8,11 @@
     overflow: auto;
 }
 
+#myBtn,
+#myBtn2 {
+    cursor: pointer;
+}
+
 section,
 footer,
 .contact-form-container {
