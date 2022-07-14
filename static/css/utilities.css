@@ -109,11 +109,11 @@ input[type="number"]:focus {
 /* CARD STYLES */
 
 .card {
-    background-color: transparent;
+    background-color: #1B2228;
     color: #FFFFFF8C;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    margin: 10px;
+    /* padding: 20px;
+    margin: 10px; */
 }
 
 .card-alt {
@@ -145,6 +145,12 @@ input[type="number"]:focus {
 
 .grid-3 {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.grid-3-alt {
+    display: grid;
+    gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
 
 }
@@ -308,6 +314,21 @@ input[type="number"]:focus {
 
 .mb-100 {
     margin-bottom: 100px;
+}
+.m-1 {
+    margin: 10px;
+}
+
+.m-2 {
+    margin: 20px;
+}
+
+.m-3 {
+    margin: 30px;
+}
+
+.m-100 {
+    margin: 100px;
 }
 
 /* PADDINGS */
