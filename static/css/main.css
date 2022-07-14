@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 
 :root {
+    --main-bg-color: #21272C;
     --link-text-color: #76BA99;
+    --dark-accent-color: #1B2228;
     --bright-text-color: #FFFFFF;
     --dim-text-color: #FFFFFF8C;
     --font-weight-light: 300;
@@ -30,7 +32,7 @@
 }
 
 body {
-    background-color: #21272C;
+    background-color: var(--main-bg-color);
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
@@ -61,6 +63,7 @@ a:hover {
     color: var(--link-text-color);
 }
 
+/* HERO SECTION */
 .animation-wrapper {
     width: 500px !important;
     margin: auto;
@@ -89,6 +92,8 @@ body>section.main-header.container.text-center>div.mt-3 {
     /* border-bottom: 5px solid var(--link-text-color); */
     position: relative;
 }
+
+
 
 /* NAVBAR */
 
@@ -436,9 +441,10 @@ body>section.projects.container>h3 {
 
 section.contact-form-container.container>div>form>div.grid-1>textarea {
     margin: 15px;
+    padding: 5px;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid #FFF;
+    border: 2px solid #FFF;
     font-size: 16px;
     resize: none;
     height: 150px;
@@ -454,11 +460,28 @@ section.contact-form-container.container>div>form>div.grid-1>textarea::placehold
 
 form>div.grid-1>input[type=button] {
     height: 40px;
-    background-color: #fff;
+    background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    color: #fff;
+    font-size: 18px;
     font-weight: 400;
+    text-transform: uppercase;
+    transition: 0.2s ease-in-out;
+}
+
+form>div.grid-1>input[type=button]:hover {
+    color: #76BA99;
+}
+
+.form-wrapper {
+    background-color: var(--dark-accent-color);
+
+}
+
+div.form-wrapper.mt-5 > form > div.grid-1 > label {
+    padding-left: 15px;
+    margin-top: 50px;
 }
 
 /* MEDIA QUERIES */
