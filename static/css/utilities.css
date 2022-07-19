@@ -188,7 +188,13 @@ input[type="number"]:focus {
 .card-btn {
     padding: 10px 20px;
     border: 1px solid #76BA99;
+    
+}
 
+.card-btn-alt {
+    padding: 10px 20px;
+    border: none;
+    
 }
 
 
