@@ -67,6 +67,19 @@ a:hover {
 .animation-wrapper {
     width: 500px !important;
     margin: auto;
+    opacity: 0;
+    animation: sphereAppear 1s forwards ease-in;
+    animation-delay: 0.5s;
+}
+
+@keyframes sphereAppear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .sphere-animation {
