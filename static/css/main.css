@@ -12,11 +12,7 @@
 }   
 /* DARKMODE/LIGHTMODE */
 
-.light-mode {
-    background-color: #fff;
-    filter: invert(100%) hue-rotate(180deg);
-    transition: 5s;
-}
+
 
 /* img {
     filter: invert(1) hue-rotate(180deg)
