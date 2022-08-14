@@ -12,6 +12,9 @@
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/4.2.8/css/tooltipster.bundle.css"
+    integrity="sha512-3zyscitq6+9V1nGiptsXHLVaJaAMCUQeDW34fygk9LdcM+yjYIG19gViDKuDGCbRGXmI/wiY9XjdIHdU55G97g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="{% static 'css/utilities.css' %}">
 
   <!--Let browser know website is optimized for mobile-->
@@ -400,16 +403,21 @@
           <img src="{% static 'images/praybuddyimage.png' %}" alt="">
 
           <h3 class="subtitle-font fw-3">PrayerBuddy</h3>
+          <p class="card-description mt-1 mb-1 fw-3">
+            Used Tech: <span class="tiny-text accent-text-color">Python/Django, JQuery, PostgreSQL, AWS S3</span>
+          </p>
           <p class="card-description mt-1 mb-1 fw-3 dim-text-color">
-            A Small "Discord" like site for people of all religions to post, talk and discuss everything Holy. Come and get your blessings!
+            A Small "Discord" like site for people of all religions to post, talk and discuss everything Holy. Come and
+            get your blessings!
           </p>
           <a href="https://praybuddy.herokuapp.com/" target="_blank" class="card-btn small-font">
             View Live Project
           </a>
-          <a href="https://github.com/DelroyBrown/PrayBuddy" target="_blank" class="card-btn-alt small-font">
-            View Source Code
+          <a href="https://github.com/DelroyBrown/PrayBuddy" target="_blank"
+            class="card-btn-alt right-align view-source-code-text">
+            <i class="fa-brands fa-github-alt fa-xl with-tooltip" data-tooltip-content="View Source Code"></i>
           </a>
-          
+
         </div>
       </div>
 
@@ -417,38 +425,74 @@
       <div class="card-alt">
         <div class="light-text-color title-font fw-2">
           <img src="{% static 'images/vinylimage.png' %}" alt="">
-          
+
           <h3 class="subtitle-font fw-3">The Vinyl Project</h3>
+          <p class="card-description mt-1 mb-1 fw-3">
+            Used Tech: <span class="tiny-text accent-text-color">Python/Django, JQuery, PostgreSQL, AWS S3</span>
+          </p>
           <p class="card-description mt-1 mb-1 fw-3 dim-text-color">
             An Ecommerce store specialising in mainly vinyl records but also CDs & Tapes. Using Stripe as a payment
             gateway.
           </p>
-          <a href="https://thevinylproject.herokuapp.com/" target="_blank"
-            class="project-card-btn card-btn small-font">
+          <a href="https://thevinylproject.herokuapp.com/" target="_blank" class="project-card-btn card-btn small-font">
             View Live Project
           </a>
-            <a href="https://github.com/DelroyBrown/Vinyl" target="_blank" class="card-btn-alt small-font">
-              View Source Code
-            </a>
+          <a href="https://github.com/DelroyBrown/Vinyl" target="_blank" class="card-btn-alt view-source-code-text">
+            <i class="fa-brands fa-github-alt fa-xl with-tooltip" data-tooltip-content="View Source Code"></i>
+          </a>
         </div>
       </div>
+
+
       <div class="card-alt">
         <div class="light-text-color title-font fw-2">
           <img src="{% static 'images/selfcommerce.png' %}" alt="">
-          
+
           <h3 class="subtitle-font fw-3">Selfcommerce</h3>
-          <p class="card-description mt-1 mb-1 fw-3 dim-text-color">
-           A full on ecommerce store complete with order tracking, customer profiles and a Stripe payment system.
+          <p class="card-description mt-1 mb-1 fw-3">
+            Used Tech: <span class="tiny-text accent-text-color">Python/Django, JQuery, PostgreSQL, AWS S3</span>
           </p>
-          <a href="https://selfcommerce.herokuapp.com/" target="_blank"
-            class="project-card-btn card-btn small-font">
+          <p class="card-description mt-1 mb-1 fw-3 dim-text-color">
+            A full on ecommerce store complete with order tracking, customer profiles and a Stripe payment system.
+          </p>
+          <a href="https://selfcommerce.herokuapp.com/" target="_blank" class="project-card-btn card-btn small-font">
             View Live Project
           </a>
-            <a href="https://github.com/DelroyBrown/Ecommerce" target="_blank" class="card-btn-alt small-font">
-              View Source Code
-            </a>
+          <a href="https://github.com/DelroyBrown/Ecommerce" target="_blank" class="card-btn-alt view-source-code-text">
+            <i class="fa-brands fa-github-alt fa-xl with-tooltip" data-tooltip-content="VIEW SOURCE CODE"></i>
+          </a>
         </div>
       </div>
+
+    </div>
+
+
+    <h3 class="mt-5 dim-text-color fw-3">JAVASCRIPT PROJECTS</h3>
+    <div class="grid-3">
+
+      <div class="card-alt">
+        <div class="light-text-color title-font fw-2">
+          <img src="{% static 'images/carsimulator.png' %}" alt="">
+
+          <h3 class="subtitle-font fw-3">Car Simulator</h3>
+          <p class="card-description mt-1 mb-1 fw-3">
+            Used Tech: <span class="tiny-text accent-text-color">Javascript</span>
+          </p>
+          <p class="card-description mt-1 mb-1 fw-3 dim-text-color">
+            A pure javascript machine learning car simulator. Vehicle avoids traffic and walls using a neural network.
+          </p>
+          <a href="https://delroybrown.github.io/CarSimulator/" target="_blank" class="card-btn small-font">
+            View Live Project
+          </a>
+          <a href="https://github.com/DelroyBrown/CarSimulator" target="_blank"
+            class="card-btn-alt right-align view-source-code-text">
+            <i class="fa-brands fa-github-alt fa-xl with-tooltip" data-tooltip-content="View Source Code"></i>
+          </a>
+
+        </div>
+      </div>
+
+
 
     </div>
   </section>
@@ -511,8 +555,19 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="{% static 'js/main.js' %}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/4.2.8/js/tooltipster.bundle.min.js"
+    integrity="sha512-ZKNW/Nk1v5trnyKMNuZ6kjL5aCM0kUATbpnWJLPSHFk/5FxnvF9XmpmjGbag6BEgmXiz7rL6o6uJF6InthyTSg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="{% static 'js/anime.js' %}"></script>
   <script src="{% static 'js/animation_main.js' %}"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.tooltip').tooltipster({
+        theme: 'tooltipster-noir'
+      });
+    });
+  </script>
 </body>
 
 </html>

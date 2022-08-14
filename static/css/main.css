@@ -210,6 +210,41 @@ footer>div>div>nav>div:nth-child(1)>a {
 }
 
 
+/* TOOLTIP */
+
+
+.with-tooltip {
+  position: relative;
+}
+
+.with-tooltip::after {
+  content: attr(data-tooltip-content);
+  padding: 15px;
+  position: absolute;
+  border: 1px solid #fff;
+  color: white;
+  bottom: 25px;
+  right: 50%;
+  left: 50%;
+  width: max-content;
+  background-color: var(--main-bg-color);
+  opacity: 0;
+  font-size: 0.8rem;
+  font-family: 'Roboto', sans-serif;;
+  visibility: hidden;
+  /* text-transform: capitalize; */
+  transform: translate(-50%, 18px) scale(0.8);
+  transition: visibility, opacity, transform 0.3S;
+}
+
+.with-tooltip:hover::after {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+
+
 
 /* FIRST SECTION */
 
@@ -493,6 +528,10 @@ div.form-wrapper.mt-5 > form > div.grid-1 > label {
     margin-top: 50px;
 }
 
+.view-source-code-text {
+    font-size: 15px;
+}
+
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 902px) {
@@ -602,6 +641,10 @@ div.form-wrapper.mt-5 > form > div.grid-1 > label {
         color: #fff;
         text-decoration: none;
         cursor: pointer;
+    }
+
+    .view-source-code-text {
+        font-size: 12px !important;
     }
 
     /* .card {

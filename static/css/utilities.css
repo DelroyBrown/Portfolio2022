@@ -8,6 +8,7 @@
     overflow: auto;
 }
 
+
 #myBtn,
 #myBtn2 {
     cursor: pointer;
@@ -36,13 +37,14 @@ footer,
     animation-delay: 1s;
     animation: borderExtend 3s ease-in-out;
 }
+
 .div-border2 {
     position: absolute;
     width: 100%;
     height: 2px;
     bottom: -20px;
     background-color: var(--bright-text-color);
-    
+
 }
 
 @keyframes borderExtend {
@@ -106,6 +108,10 @@ input[type="number"]:focus {
     color: #76BA99;
 }
 
+.red-text-color {
+    color: red !important;
+}
+
 /* CARD STYLES */
 
 .card {
@@ -132,6 +138,12 @@ input[type="number"]:focus {
     align-items: center;
     height: 100%;
 }
+.flex-sb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
 
 .grid-2 {
     display: grid;
@@ -148,6 +160,7 @@ input[type="number"]:focus {
     grid-template-columns: 1fr 1fr 1fr;
 
 }
+
 .grid-3-alt {
     display: grid;
     gap: 30px;
@@ -188,13 +201,17 @@ input[type="number"]:focus {
 .card-btn {
     padding: 10px 20px;
     border: 1px solid #76BA99;
-    
+
 }
 
 .card-btn-alt {
     padding: 10px 20px;
     border: none;
-    
+}
+.card-btn-alt-2 {
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--link-text-color);
 }
 
 
@@ -205,11 +222,19 @@ input[type="number"]:focus {
 }
 
 .text-left {
-    text-align: left;
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
 }
 
 .center-align {
     align-items: center;
+}
+
+.right-align {
+    align-items: flex-end;
 }
 
 .title-font {
@@ -254,13 +279,21 @@ input[type="number"]:focus {
 }
 
 
-.sm-text {
-    font-size: 15px;
+.small-text {
+    font-size: 15px !important;
+}
+
+.tiny-text {
+    font-size: 13px !important;
 }
 
 
 
 /* MARGINS */
+
+.m-0 {
+    margin: 0 !important;
+}
 
 .mr-1 {
     margin-right: 10px;
@@ -272,6 +305,21 @@ input[type="number"]:focus {
 
 .m-auto {
     margin: auto;
+}
+
+.ml-auto {
+    margin-left: auto !important;
+}
+
+
+.ml-1 {
+    margin-left: 10px !important;
+}
+.ml-2 {
+    margin-left: 20px !important;
+}
+.ml-3 {
+    margin-left: 30px !important;
 }
 
 .mt-1 {
@@ -321,6 +369,7 @@ input[type="number"]:focus {
 .mb-100 {
     margin-bottom: 100px;
 }
+
 .m-1 {
     margin: 10px;
 }
